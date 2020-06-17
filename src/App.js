@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import IssuesList from './components/IssuesList';
-import IssueDetail from './components/IssueDetail.js';
+import IssueDetail from './components/IssueDetail';
+// import Users from './components/Users';
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={IssuesList} />
           <Route exact path="/issue/:issueNumber" component={IssueDetail} />
+          {/* <Route exact path="/users" component={Users} /> */}
           <Route>
-            <h1>Error! 404 - Not Found</h1>
+            <h1>ERROR 404 - Page is not found</h1>
           </Route>
         </Switch>
       </div>
