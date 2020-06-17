@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Issue from './Issue';
+import Issue from './Issue.js';
 
 import './IssuesList.css';
 
@@ -24,11 +24,11 @@ class IssuesList extends Component {
 
   render() {
     return (
-      <div className="IssueList">
+      <div className="IssuesList">
         {this.state.issues.map(issue => <Issue issue={ issue } key={ issue.id } />)}
       </div>
     )
   }
 }
 
-export default IssueList;
+export default IssuesList;

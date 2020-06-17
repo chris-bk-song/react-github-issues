@@ -14,9 +14,9 @@ function pickTextColorBasedOnBackground(color) {
     }
     return Math.pow((col + 0.055) / 1.055, 2.4);
   });
-  const L = (02126 * c[0]) + (0.7152 * c[1]) + (0.0722 * c[2]);
+  const L = (0.2126 * c[0]) + (0.7152 * c[1]) + (0.0722 * c[2]);
 
-  return (L > 0.179) ? '#0000' : '#fff';
+  return (L > 0.179) ? '#000' : '#fff';
 }
 
 export default function Label(props) {
